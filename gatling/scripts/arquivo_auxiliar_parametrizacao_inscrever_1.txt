@@ -1,0 +1,25 @@
+------WebKitFormBoundarykwTxNAftRZxMYlGV
+Content-Disposition: form-data; name="txtIdConcEdicao"
+
+
+------WebKitFormBoundarykwTxNAftRZxMYlGV
+Content-Disposition: form-data; name="txtIdOpcao"
+
+
+------WebKitFormBoundarykwTxNAftRZxMYlGV
+Content-Disposition: form-data; name="rdLogin"
+
+MAIL
+------WebKitFormBoundarykwTxNAftRZxMYlGV
+Content-Disposition: form-data; name="txtMail"
+
+${email}
+------WebKitFormBoundarykwTxNAftRZxMYlGV
+Content-Disposition: form-data; name="txtCPF"
+
+
+------WebKitFormBoundarykwTxNAftRZxMYlGV
+Content-Disposition: form-data; name="txtPasswd"
+
+senhausuario
+------WebKitFormBoundarykwTxNAftRZxMYlGV--

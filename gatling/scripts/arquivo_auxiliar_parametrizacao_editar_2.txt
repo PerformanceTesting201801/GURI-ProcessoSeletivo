@@ -1,0 +1,141 @@
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtIdInscrExistente"
+
+0
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtIdConcEdicao"
+
+
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtIdCandidato"
+
+113838
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtIdOpcao"
+
+
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtUrl"
+
+psa/inscricao/abrirJanelaInscricao/
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtNome"
+
+Alvarinho
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtDtNasc"
+
+07/05/1996
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtSexo"
+
+M
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtEstadoCivil"
+
+1
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtEtnia"
+
+1
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtDeficiencia"
+
+5
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtMail"
+
+0p.batb@airmail.tech
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtFone"
+
+55996088979
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtFoneRes"
+
+55996088979
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtFoneContato"
+
+55996088979
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtPais"
+
+1
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtEstadoEndereco"
+
+RS        
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtCidadeEndereco"
+
+66389
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtCidadeEstr"
+
+
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtRua"
+
+Rua Flores da Cunha
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtNumero"
+
+90
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtComplemento"
+
+apto 303
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtBairro"
+
+Centro
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtCep"
+
+97546210
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtNacionalidade"
+
+1
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtEstadoNacionalidade"
+
+RS        
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtIdCidadeNacionalidade"
+
+66389
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtCidadeEstrNacionalidade"
+
+
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtNomePai"
+
+Jose Abreu
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtNomeMae"
+
+Maria da Silva
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtCpf"
+
+47409297085
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtRg"
+
+490793538
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtPassaporte"
+
+
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtDtVisto"
+
+
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK
+Content-Disposition: form-data; name="txtRne"
+
+
+------WebKitFormBoundaryxMOdIWMFuT7Y62BK--

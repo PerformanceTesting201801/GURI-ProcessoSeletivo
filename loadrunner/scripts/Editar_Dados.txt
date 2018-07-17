@@ -1,0 +1,316 @@
+Action()
+{
+
+	web_set_sockets_option("SSL_VERSION", "2&3");
+
+	web_url("success.txt", 
+		"URL=http://detectportal.firefox.com/success.txt", 
+		"Resource=1", 
+		"RecContentType=text/plain", 
+		"Referer=", 
+		"Snapshot=t1.inf", 
+		LAST);
+
+	lr_think_time(4);
+
+	web_url("success.txt_2", 
+		"URL=http://detectportal.firefox.com/success.txt", 
+		"Resource=1", 
+		"RecContentType=text/plain", 
+		"Referer=", 
+		"Snapshot=t2.inf", 
+		LAST);
+
+	web_add_cookie("_ga=GA1.3.1715503025.1520860100; DOMAIN=guriensino.unipampa.edu.br");
+
+	web_add_cookie("erp-session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%2258ba40fd2c5b121769b461bb11e2c6d6%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A11%3A%22177.4.48.53%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A78%3A%22Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A61.0%29+Gecko%2F20100101+Firefox%2F61.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1531049764%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7D4861b31ad1788547bba60815ec2881e7; DOMAIN=guriensino.unipampa.edu.br");
+
+	web_add_cookie("erp.contrast=0; DOMAIN=guriensino.unipampa.edu.br");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_url("guri", 
+		"URL=https://guriensino.unipampa.edu.br/guri/", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=", 
+		"Snapshot=t3.inf", 
+		"Mode=HTML", 
+		EXTRARES, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		"Url=public/themes/moder/imgs/busca.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=public/themes/moder/imgs/novo_user.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=public/themes/moder/imgs/lock.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_75_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=public/themes/moder/imgs/marcador-lista.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=public/themes/moder/imgs/diagonals_3.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_admin.css", ENDITEM, 
+		LAST);
+
+	web_add_header("X-Requested-With", 
+		"XMLHttpRequest");
+
+	web_submit_form("login", 
+		"Snapshot=t4.inf", 
+		ITEMDATA, 
+		"Name=txtPerfilLogin", "Value=PTL", ENDITEM, 
+		"Name=login", "Value=151150228", ENDITEM, 
+		"Name=senha", "Value=#gavm17#", ENDITEM, 
+		"Name=captcha", "Value=", ENDITEM, 
+		EXTRARES, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		LAST);
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_url("principal", 
+		"URL=https://guriensino.unipampa.edu.br/guri/ptl/sistema/principal", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/", 
+		"Snapshot=t5.inf", 
+		"Mode=HTML", 
+		EXTRARES, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/marcador-lista.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/busca.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/diagonals_5.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_admin.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_75_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-soft_15_5f8168_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-icons_ffffff_256x240.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-icons_cc0000_256x240.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_dots-small_65_bcbdbc_2x2.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-hard_100_eeeeee_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_65_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		LAST);
+
+	web_add_auto_header("X-Requested-With", 
+		"XMLHttpRequest");
+
+	web_url("{cpf}", 
+		"URL=https://guriensino.unipampa.edu.br/guri/ptl/sistema/getDadosPesquisaAndifesAlunoAjax/{cpf}", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/ptl/sistema/principal", 
+		"Snapshot=t6.inf", 
+		"Mode=HTML", 
+		LAST);
+
+	web_revert_auto_header("X-Requested-With");
+
+	web_custom_request("abrirDialogPesqAndifes", 
+		"URL=https://guriensino.unipampa.edu.br/guri/ptl/sistema/abrirDialogPesqAndifes/", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/ptl/sistema/principal", 
+		"Snapshot=t7.inf", 
+		"Mode=HTML", 
+		"EncType=", 
+		LAST);
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_url("areaDoCandidato", 
+		"URL=https://guriensino.unipampa.edu.br/guri/psa/acesso/areaDoCandidato/", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/ptl/sistema/principal", 
+		"Snapshot=t8.inf", 
+		"Mode=HTML", 
+		EXTRARES, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/marcador-lista.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/busca.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_75_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-soft_15_5f8168_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-icons_ffffff_256x240.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-icons_cc0000_256x240.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-hard_100_eeeeee_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_dots-small_65_bcbdbc_2x2.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/diagonals_3.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_admin.css", ENDITEM, 
+		LAST);
+
+	web_add_header("X-Requested-With", 
+		"XMLHttpRequest");
+
+	web_custom_request("isLogado", 
+		"URL=https://guriensino.unipampa.edu.br/guri/ptl/sistema/isLogado", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/acesso/abrirJanelaLogin", 
+		"Snapshot=t9.inf", 
+		"Mode=HTML", 
+		"EncType=", 
+		LAST);
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_submit_data("realizarLogin", 
+		"Action=https://guriensino.unipampa.edu.br/guri/psa/acesso/realizarLogin/", 
+		"Method=POST", 
+		"EncType=multipart/form-data", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/acesso/abrirJanelaLogin", 
+		"Snapshot=t10.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=txtIdConcEdicao", "Value=", ENDITEM, 
+		"Name=txtIdOpcao", "Value=", ENDITEM, 
+		"Name=rdLogin", "Value=MAIL", ENDITEM, 
+		"Name=txtMail", "Value={email}", ENDITEM, 
+		"Name=txtCPF", "Value=", ENDITEM, 
+		"Name=txtPasswd", "Value=senhausuario", ENDITEM, 
+		LAST);
+
+	web_revert_auto_header("Upgrade-Insecure-Requests");
+
+	web_url("abrirJanelaInscricao", 
+		"URL=https://guriensino.unipampa.edu.br/guri/psa/inscricao/abrirJanelaInscricao/", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/acesso/abrirJanelaLogin", 
+		"Snapshot=t11.inf", 
+		"Mode=HTML", 
+		EXTRARES, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/marcador-lista.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/busca.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_75_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		LAST);
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_url("Editar Meus Dados", 
+		"URL=https://guriensino.unipampa.edu.br/guri/psa/inscricao/abrirJanelaInscricao/", 
+		"Snapshot=t12.inf", 
+		EXTRARES, 
+		"Url=/guri/public/themes/moder//imgs/ajax-loader-preto.gif", ENDITEM, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/marcador-lista.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/busca.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_75_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-soft_15_5f8168_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-icons_ffffff_256x240.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-icons_cc0000_256x240.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-hard_100_eeeeee_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_dots-small_65_bcbdbc_2x2.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/diagonals_3.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_admin.css", ENDITEM, 
+		LAST);
+
+	web_add_header("X-Requested-With", 
+		"XMLHttpRequest");
+
+	web_custom_request("isLogado_2", 
+		"URL=https://guriensino.unipampa.edu.br/guri/ptl/sistema/isLogado", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/candidato/editar/", 
+		"Snapshot=t13.inf", 
+		"Mode=HTML", 
+		"EncType=", 
+		LAST);
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_submit_data("salvar", 
+		"Action=https://guriensino.unipampa.edu.br/guri/psa/candidato/salvar", 
+		"Method=POST", 
+		"EncType=multipart/form-data", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/candidato/editar/", 
+		"Snapshot=t14.inf", 
+		"Mode=HTML", 
+		ITEMDATA,  
+		"Name=txtUrl", "Value=psa/inscricao/abrirJanelaInscricao/", ENDITEM, 
+		"Name=txtNome", "Value=Nome Editado", ENDITEM, 
+		"Name=txtDtNasc", "Value=05/01/1996", ENDITEM, 
+		"Name=txtSexo", "Value=M", ENDITEM, 
+		"Name=txtEstadoCivil", "Value=1", ENDITEM, 
+		"Name=txtEtnia", "Value=1", ENDITEM, 
+		"Name=txtDeficiencia", "Value=5", ENDITEM, 
+		"Name=txtMail", "Value={email}", ENDITEM, 
+		"Name=txtFone", "Value=5599999999", ENDITEM, 
+		"Name=txtFoneRes", "Value=", ENDITEM, 
+		"Name=txtFoneContato", "Value=5599999999", ENDITEM, 
+		"Name=txtPais", "Value=1", ENDITEM, 
+		"Name=txtEstadoEndereco", "Value=RS        ", ENDITEM, 
+		"Name=txtCidadeEndereco", "Value=66427", ENDITEM, 
+		"Name=txtCidadeEstr", "Value=", ENDITEM, 
+		"Name=txtRua", "Value=Marechal Rondon", ENDITEM, 
+		"Name=txtNumero", "Value=60", ENDITEM, 
+		"Name=txtComplemento", "Value=khkk", ENDITEM, 
+		"Name=txtBairro", "Value=kjhkj", ENDITEM, 
+		"Name=txtCep", "Value=97700000", ENDITEM, 
+		"Name=txtNacionalidade", "Value=1", ENDITEM, 
+		"Name=txtEstadoNacionalidade", "Value=RS        ", ENDITEM, 
+		"Name=txtIdCidadeNacionalidade", "Value=66427", ENDITEM, 
+		"Name=txtCidadeEstrNacionalidade", "Value=", ENDITEM, 
+		"Name=txtNomePai", "Value=sdlfkjsldkj", ENDITEM, 
+		"Name=txtNomeMae", "Value=sdflkjsldkjf", ENDITEM, 
+		"Name=txtCpf", "Value={cpf}", ENDITEM, 
+		"Name=txtRg", "Value={rg}", ENDITEM, 
+		"Name=txtPassaporte", "Value=", ENDITEM, 
+		"Name=txtDtVisto", "Value=", ENDITEM, 
+		"Name=txtRne", "Value=", ENDITEM, 
+		LAST);
+
+	web_revert_auto_header("Upgrade-Insecure-Requests");
+
+	web_url("abrirJanelaInscricao_2", 
+		"URL=https://guriensino.unipampa.edu.br/guri/psa/inscricao/abrirJanelaInscricao/", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/candidato/editar/", 
+		"Snapshot=t15.inf", 
+		"Mode=HTML", 
+		EXTRARES, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/marcador-lista.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/busca.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_75_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/diagonals_3.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_admin.css", ENDITEM, 
+		LAST);
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_url("logout", 
+		"URL=https://guriensino.unipampa.edu.br/guri/ptl/sistema/logout", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/inscricao/abrirJanelaInscricao/", 
+		"Snapshot=t16.inf", 
+		"Mode=HTML", 
+		LAST);
+
+	web_revert_auto_header("Upgrade-Insecure-Requests");
+
+	web_url("logout_2", 
+		"URL=https://guriensino.unipampa.edu.br/guri/ptl/sistema/logout", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=https://guriensino.unipampa.edu.br/guri/psa/inscricao/abrirJanelaInscricao/", 
+		"Snapshot=t17.inf", 
+		"Mode=HTML", 
+		EXTRARES, 
+		"Url=http://detectportal.firefox.com/success.txt", "Referer=", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/marcador-lista.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/busca.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/novo_user.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		"Url=/guri/public/js/jquery-ui-1.9.0/css/custom-theme/images/ui-bg_flat_75_ffffff_40x100.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/js/jquery-ui-1.9.0/css/custom-theme/jquery-ui-1.8.18.custom.css", ENDITEM, 
+		"Url=/guri/public/themes/moder//imgs/lock.png", "Referer=https://guriensino.unipampa.edu.br/guri/public/themes/moder//css/estilo_menu.css", ENDITEM, 
+		LAST);
+
+	return 0;
+}

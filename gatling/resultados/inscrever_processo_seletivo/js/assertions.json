@@ -1,0 +1,10 @@
+{
+  "simulation": "Inscricao",
+  "simulationId": "ParametrizandoId",
+  "start": 1531445563677,
+  "description": "",
+  "scenarios": ["Inscricao"],
+  "assertions": [
+
+  ]
+}
